@@ -338,48 +338,56 @@ o	**<ins>Cụm 16<ins>**: Pauline Sabin, Vere Ponsonby Earl of Bessborough, Norm
   <p align="center">
   <img src="https://media.discordapp.net/attachments/847349555703316512/1089877177400578139/image.png">
 </p>
-  ```diff
+  
+```diff
 + Cụm 9
 ```
   <p align="center">
   <img src="https://media.discordapp.net/attachments/847349555703316512/1089877499481169940/image.png">
 </p>
+  
   ```diff
 + Cụm 10
 ```
   <p align="center">
   <img src="https://media.discordapp.net/attachments/847349555703316512/1089877499732836372/image.png">
 </p>
-  ```diff
+  
+```diff
 + Cụm 11
 ```
   <p align="center">
   <img src="https://media.discordapp.net/attachments/847349555703316512/1089877499988693092/image.png">
 </p>
+  
   ```diff
 + Cụm 12
 ```
   <p align="center">
   <img src="https://media.discordapp.net/attachments/847349555703316512/1089877500294873168/image.png">
 </p>
+  
   ```diff
 + Cụm 13
 ```
   <p align="center">
   <img src="https://media.discordapp.net/attachments/847349555703316512/1089877500596867154/image.png">
 </p>
+  
   ```diff
 + Cụm 14
 ```
   <p align="center">
   <img src="https://media.discordapp.net/attachments/847349555703316512/1089877500915621888/image.png">
 </p>
+  
   ```diff
 + Cụm 15
 ```
   <p align="center">
   <img src="https://media.discordapp.net/attachments/847349555703316512/1089877501192454144/image.png">
 </p>
+  
   ```diff
 + Cụm 16
 ```

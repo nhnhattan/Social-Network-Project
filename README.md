@@ -127,16 +127,21 @@ plt.show() #in đồ thị
   <img src="https://media.discordapp.net/attachments/847349555703316512/1089868094584922122/output.png?width=612&height=434">
 </p>
 
-- Xuất file csv
+## IV. Các độ đo
+### 1. Betweeness Centrality
 ```python
-labels = nx.get_edge_attributes(G, 'weight')
-df2 = pd.DataFrame(columns = ['source', 'target', 'weight'])
-for key, value in labels.items():
-    df2 = df2.append({'source':key[0], 'target':key[1], 'weight':value}, ignore_index=True)
-df2.to_csv (r'mydata4.csv', index = False, header=True)
+betweenness_centrality = nx.betweenness_centrality(G)
+sort_betweenness_centrality = dict(sorted(betweenness_centrality.items(), key=lambda kv:kv[1], reverse =True))
+#top5between = pd.DataFrame(list(sort_betweenness_centrality.items()), columns=['Node', 'Betweenness Centrality'])
+#display(top5between.head(10))
+print("Độ đo Betweeness")
+print()
+display(sort_betweenness_centrality)
 ```
-
-
+- Độ đo Betweeness Centrality được xếp theo tên
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089868947064639499/image.png?width=624&height=434">
+</p>
 
 
 

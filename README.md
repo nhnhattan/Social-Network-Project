@@ -13,3 +13,15 @@
 ```python
 df = pd.read_csv('/content/timecovers2.csv', usecols = ["Name", "Occupation"])
 ```
+
+- Loại bỏ các giá trị null
+
+```python
+df.dropna() #loại bỏ các giá trị bị thiếu
+```
+
+-	Loại bỏ các giá trị trùng lặp
+
+```python
+df.drop_duplicates() #loại bỏ các giá trị bị trùng lặp
+```

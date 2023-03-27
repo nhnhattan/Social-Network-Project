@@ -56,9 +56,10 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.cluster import KMeans
 ```
 ### 2. Đồ thị 2 phía
-•	![#f03c15]**Node**: Phía bên trái là “Occupation” – Lĩnh vực của tạp chí và bên phải là “Name” – Tên của người được đăng trên tạp chí đó
+```diff
+•	- **Node**: Phía bên trái là “Occupation” – Lĩnh vực của tạp chí và bên phải là “Name” – Tên của người được đăng trên tạp chí đó
 •	**Edge**: Một cạnh tương ứng với khi một người được chọn để đăng tải trên lĩnh vực của tạp chí đó thì cạnh sẽ hình thành. 
-
+```
 
 
 

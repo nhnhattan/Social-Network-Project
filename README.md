@@ -329,67 +329,65 @@ o	**<ins>Cụm 16<ins>**: Pauline Sabin, Vere Ponsonby Earl of Bessborough, Norm
 + Cụm 7
 ```
   <p align="center">
-  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089876874580217886/image.png">
 </p>
 
   ```diff
 + Cụm 8
 ```
   <p align="center">
-  <img src="https://media.discordapp.net/attachments/847349555703316512/1089876874580217886/image.png">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089877177400578139/image.png">
 </p>
   ```diff
-+ Cụm 7
++ Cụm 9
 ```
   <p align="center">
-  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089877499481169940/image.png">
 </p>
   ```diff
-+ Cụm 7
++ Cụm 10
 ```
   <p align="center">
-  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089877499732836372/image.png">
 </p>
   ```diff
-+ Cụm 7
++ Cụm 11
 ```
   <p align="center">
-  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089877499988693092/image.png">
 </p>
   ```diff
-+ Cụm 7
++ Cụm 12
 ```
   <p align="center">
-  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089877500294873168/image.png">
 </p>
   ```diff
-+ Cụm 7
++ Cụm 13
 ```
   <p align="center">
-  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089877500596867154/image.png">
 </p>
   ```diff
-+ Cụm 7
++ Cụm 14
 ```
   <p align="center">
-  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089877500915621888/image.png">
 </p>
   ```diff
-+ Cụm 7
++ Cụm 15
 ```
   <p align="center">
-  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089877501192454144/image.png">
 </p>
   ```diff
-+ Cụm 7
++ Cụm 16
 ```
   <p align="center">
-  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089877501427339335/image.png">
 </p>
-  
 
-
-
+### 3. Girvan Newman
 
 
 

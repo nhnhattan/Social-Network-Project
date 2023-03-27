@@ -147,12 +147,29 @@ display(sort_betweenness_centrality)
 <p align="center">
   <img src="https://media.discordapp.net/attachments/847349555703316512/1089869257258565722/image.png">
 </p>
--	Ý nghĩa: Độ đo Betweeness Centrality càng cao thì họ sẽ được đăng trên nhiều lĩnh vực phổ biến với người khác nhất
+-	<ins>Ý nghĩa</ins>: Độ đo Betweeness Centrality càng cao thì họ sẽ được đăng trên nhiều lĩnh vực phổ biến với người khác nhất
 
+### 2. Closeness Centrality
+```python
+Closeness_measure = nx.closeness_centrality(G)
+sort_Closeness_measure = dict(sorted(Closeness_measure.items(), key=lambda kv:kv[1], reverse =True))
+#top5close = pd.DataFrame(list(sort_Closeness_measure.items()), columns=['Node', 'Closeness Measure'])
+#display(top5close.head(10))
+print("Độ đo Closeness")
+display(sort_Closeness_measure)
+```
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089869831551078430/image.png?width=546&height=434">
+</p>
+-	Top 10 người có độ đo Closeness Centrality cao nhất
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089869974224502794/image.png">
+</p>
 
-
-
-
+-	Ý nghĩa: Độ đo Closeness Centrality càng cao thì họ càng được đăng chung trên nhiều lĩnh vực với những người khác
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089869974509727785/image.png">
+</p>
 
 
 

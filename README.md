@@ -95,7 +95,7 @@ nx.draw_networkx(B, pos = nx.drawing.layout.bipartite_layout(B,Occupation),font_
 
 ### 3. Đồ thị 1 phía
 •	**Node**: Là tên của người được đăng trên tạp chí đó
-•	Edge: Hình thành khi 2 người được đăng trên cùng 1 lĩnh vực tạp chí, Ý nghĩa cho ta thấy sự cạnh tranh để giữ được vị trí của mình tại lĩnh vực đó 
+•	Edge: Hình thành khi 2 người được đăng trên cùng 1 lĩnh vực tạp chí, Ý nghĩa cho ta thấy sự cạnh tranh để giữ được vị trí của mình tại lĩnh vực đó </br>
 <ins>Ví dụ</ins>: Như 2 người cùng được đăng trên 1 lĩnh vực là Politics & Gov thì họ sẽ được nối thành 1 cạnh
 Weight: Trọng số là số lĩnh vực trùng nhau mà 2 người cùng được đăng trên lĩnh vực đó 
 

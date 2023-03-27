@@ -436,11 +436,32 @@ plt.show()
 •	**<ins>Cụm 2</ins>**: </br>Jacob Ruppert, Bob Feller, Fred Perry, Donald Budge, Joe DiMaggio, Ellsworth Vines, Carl Hubbell, Gottfried von Cramm, Vernon Gomez, Helen Hull Jacobs, Cavalcade, Jack Crawford, Lou Gehrig, Dizzy Dean, Matt Winn, Lorne Chabot, Edward R. Bradley, Wallace Wade, Mickey Cochrane, Cavalcade, Joe DiMaggio, Mickey Cochrane, Fred Perry, Vernon Gomez, Donald Budge, Jack Crawford, Matt Winn</br>
 •	**<ins>Cụm 3</ins>**: </br>Bobby Mauch, Jean Harlow, Billy Mauch, Leni Riefenstahl, Zeppo Marx, Paul Muni, Shirley Temple, Harpo Marx, Marie Dressler, Marlene Dietrich, Clark Gable, Chico Marx, Clyde Beatty, Groucho Marx, Alice in Wonderland, Cecil B. DeMille</br>
 
+-	**Đồ thị Girvan Newman**
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089880097558896710/output.png?width=429&height=434">
+</p>
 
+* **<ins>Đặc trưng của từng cụm: </ins>** </br>
+```diff
++ Cụm 1
+```
+  <p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089880454204772463/image.png">
+</p>
 
+```diff
++ Cụm 2
+```
+  <p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089880454741635112/image.png?width=930&height=434">
+</p>
 
-
-
+```diff
++ Cụm 3
+```
+  <p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089880455018446848/image.png?width=960&height=434">
+</p>
 
 
 

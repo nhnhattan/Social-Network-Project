@@ -33,6 +33,7 @@ df.drop_duplicates() #loại bỏ các giá trị bị trùng lặp
   <img src="https://media.discordapp.net/attachments/847349555703316512/1089862405359665192/image.png">
 </p>
 <br />
+
 ##III.	Chuyển đổi DataFrame thành đồ thị
 ###1.	Import các thư viện cần thiết
 ```python

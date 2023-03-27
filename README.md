@@ -84,13 +84,20 @@ B.add_nodes_from(Occupation, bipartite = 1) #thêm nút source thuộc tập h�
 plt.figure(figsize=(12, 12)) #Tạo một hình trắng mới với size 20,20
 pos = nx.spring_layout(B) #Vẽ đồ thị
 #plt.subplots()là một hàm trả về một bộ giá trị chứa (các) đối tượng hình và trục
-#Vì vậy, khi sử dụng, fig, ax = plt.subplots()bạn giải nén bộ này vào các biến fig và ax.
+#Vì vậy, khi sử dụng, fig, ax = plt.subplots() ta giải nén bộ này vào các biến fig và ax.
 fig, ax = plt.subplots(1,1, figsize=(12,12), dpi = 200) #dpi là độ phân giải
 nx.draw_networkx(B, pos = nx.drawing.layout.bipartite_layout(B,Occupation),font_size=8,width=0.4) #draw_networkx(B: đồ thị, pos: khóa và vị trí)
 ```
 <p align="center">
   <img src="https://cdn.discordapp.com/attachments/847349555703316512/1089866895487926333/output.png">
 </p>
+-	Nhìn vào đồ thị, ta thấy rằng một lĩnh vực có thể có nhiều người được đăng khác nhau và một người có thể được đăng trên nhiều lĩnh vực khác nhau
+### 3. Đồ thị 1 phía
+•	**Node**: Là tên của người được đăng trên tạp chí đó
+•	Edge: Hình thành khi 2 người được đăng trên cùng 1 lĩnh vực tạp chí, Ý nghĩa cho ta thấy sự cạnh tranh để giữ được vị trí của mình tại lĩnh vực đó 
+<ins>Ví dụ</ins>: Như 2 người cùng được đăng trên 1 lĩnh vực là Politics & Gov thì họ sẽ được nối thành 1 cạnh
+Weight: Trọng số là số lĩnh vực trùng nhau mà 2 người cùng được đăng trên lĩnh vực đó 
+
 
 
 

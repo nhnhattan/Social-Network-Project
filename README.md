@@ -544,7 +544,9 @@ df1.to_csv ('cum1.csv', index = False, header=True)
 
 
 * **Gồm 2 cụm**:
-- **<ins>Cụm 0</ins>**: Gồm 146 người
+```diff
++ Cụm 0
+```: Gồm 146 người
 <p align="center">
   <img src="https://media.discordapp.net/attachments/847349555703316512/1089882580737867876/image.png">
 </p>
@@ -553,7 +555,10 @@ df1.to_csv ('cum1.csv', index = False, header=True)
   <img src="https://media.discordapp.net/attachments/847349555703316512/1089882870916579429/image.png">
 </p>
 </br>
-- **<ins>Cụm 0</ins>**: Gồm 154 người
+
+```diff
++ Cụm 1
+```: Gồm 154 người
 <p align="center">
   <img src="https://media.discordapp.net/attachments/847349555703316512/1089882581048229908/image.png">
 </p>

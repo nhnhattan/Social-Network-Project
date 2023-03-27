@@ -466,6 +466,114 @@ plt.show()
 ### 3. K-Means
 #### 3.1. Thuật toán Elbow
 
+```python
+dff = pd.read_csv('/content/timecovers2.csv', usecols = ["Order", "Oc"])
+km = KMeans(n_clusters=5, init='random')
+km.fit_predict(dff)
+
+sum = []
+k = range(1,10)
+for num_clusters in k:
+  km = KMeans(n_clusters=num_clusters)
+  km.fit(dff[['Order', 'Oc']])
+  sum.append(km.inertia_)
+plt.plot(k, sum, 'bx-')
+plt.xlabel('Value of k')
+plt.ylabel('Sum of Inertia')
+plt.title('Eblow Method')
+plt.show()
+```
+-	**Đồ thị Elbow**: 
+<p align="center">
+  <img src="https://cdn.discordapp.com/attachments/847349555703316512/1089881377576591370/image.png">
+</p>
+
+-	<ins>Điểm khuỷ tay:</ins> là điểm mà ở đó tốc độ suy giảm của hàm biến dạng sẽ thay đổi nhiều nhất. Tức là kể từ sau vị trí này thì gia tăng thêm số lượng cụm cũng không giúp hàm biến dạng giảm đáng kể. Nếu thuật toán phân chia theo số lượng cụm tại vị trí này sẽ đạt được tính chất phân cụm một cách tổng quát nhất mà không gặp các hiện tượng vị khớp (overfitting). Trong hình trên thì ta thấy vị trí của điểm khuỷ tay chính là k=2 vì khi số lượng cụm lớn hơn 2 thì tốc độ suy giảm của hàm biến dạng dường như không đáng kể so với trước đó.
+
+### 3.2. Thuật toán K-Means
+-	Code chuyển qua dữ liệu số. Ở đây Name1 tương ứng với Name và Oc tương ứng với Occupation nhưng cả 2 sẽ được chuyển qua dữ liệu số
+
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089881708653981736/image.png?width=498&height=434">
+</p>
+
+```python
+#K-means
+dff = pd.read_csv('/content/timecovers2.csv', usecols = ["Name1", "Oc", "Name", "Occupation"])
+km = KMeans(n_clusters=2)
+y_predict = km.fit_predict(dff[['Name1', 'Oc']])
+
+
+dff['cluster'] = y_predict
+dff['cluster'].drop_duplicates()
+
+df0 = dff[dff.cluster==0]
+df1 = dff[dff.cluster==1]
+
+plt.figure(figsize=(20,10))
+
+plt.scatter(df0.Name1,df0['Oc'],color='yellow')
+plt.scatter(df1.Name1,df1['Oc'],color='red')
+
+plt.xlabel('NameID')
+plt.ylabel('Occupation')
+plt.legend()
+
+center = km.cluster_centers_
+plt.scatter(center[:,0], center[:,1], marker="*", color='Black', s =120)
+print("Cụm trung tâm: ")
+print(center)
+print()
+
+print("Cụm 0: ")
+print("Số thành viên trong cụm: ",len(df0))
+display(df0)
+
+print()
+print("Cụm 1: ")
+print("Số thành viên trong cụm: ",len(df1))
+display(df1)
+
+df0.to_csv ('cum0.csv', index = False, header=True)
+df1.to_csv ('cum1.csv', index = False, header=True)
+```
+* **Đồ thị K-Means**
+<p align="center">
+  <img src="https://cdn.discordapp.com/attachments/847349555703316512/1089882633246355476/output.png">
+</p>
+
+
+* **Gồm 2 cụm**:
+- **<ins>Cụm 0</ins>**: Gồm 146 người
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089882580737867876/image.png">
+</p>
+-	Đặc trưng của cụm 0 là Politics & Gov với 61 người, Business với 22 người và Author, Royalty với 10 người
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089882870916579429/image.png">
+</p>
+</br>
+- **<ins>Cụm 0</ins>**: Gồm 154 người
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089882581048229908/image.png">
+</p>
+-	Đặc trưng cụm 1 là Politics & Gov với 74 người, Sport vứi 13 người,  Business với 11 người và Entertainment với 10 người
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089883118321811456/image.png">
+</p>
+</br>
+-	Node trung tâm
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089883537580232765/image.png">
+</p>
+
+
+
+
+
+
+
+
 
 
 

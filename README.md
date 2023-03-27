@@ -438,7 +438,7 @@ plt.show()
 
 -	**Đồ thị Girvan Newman**
 <p align="center">
-  <img src="https://media.discordapp.net/attachments/847349555703316512/1089880097558896710/output.png?width=429&height=434">
+  <img src="https://cdn.discordapp.com/attachments/847349555703316512/1089880097558896710/output.png">
 </p>
 
 * **<ins>Đặc trưng của từng cụm: </ins>** </br>
@@ -463,7 +463,8 @@ plt.show()
   <img src="https://media.discordapp.net/attachments/847349555703316512/1089880455018446848/image.png?width=960&height=434">
 </p>
 
-
+### 3. K-Means
+#### 3.1. Thuật toán Elbow
 
 
 

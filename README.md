@@ -145,10 +145,14 @@ display(sort_betweenness_centrality)
 
 - Top 10 người có độ đo Betweeness Centrality cao nhất
 <p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089869436363755591/image.png">
+</p>
+
+
+-	<ins>Ý nghĩa</ins>: Độ đo Betweeness Centrality càng cao thì họ sẽ được đăng trên nhiều lĩnh vực phổ biến với người khác nhất
+<p align="center">
   <img src="https://media.discordapp.net/attachments/847349555703316512/1089869257258565722/image.png">
 </p>
--	<ins>Ý nghĩa</ins>: Độ đo Betweeness Centrality càng cao thì họ sẽ được đăng trên nhiều lĩnh vực phổ biến với người khác nhất
-
 ### 2. Closeness Centrality
 ```python
 Closeness_measure = nx.closeness_centrality(G)
@@ -166,14 +170,56 @@ display(sort_Closeness_measure)
   <img src="https://media.discordapp.net/attachments/847349555703316512/1089869974224502794/image.png">
 </p>
 
--	Ý nghĩa: Độ đo Closeness Centrality càng cao thì họ càng được đăng chung trên nhiều lĩnh vực với những người khác
+-	<ins>Ý nghĩa</ins>: Độ đo Closeness Centrality càng cao thì họ càng được đăng chung trên nhiều lĩnh vực với những người khác
 <p align="center">
   <img src="https://media.discordapp.net/attachments/847349555703316512/1089869974509727785/image.png">
 </p>
 
+### 3. PageRank
+```python
+Pagerank =nx.pagerank(G)
+sort_Pagerank = dict(sorted(Pagerank.items(), key=lambda kv:kv[1], reverse =True))
+#top5pagerank = pd.DataFrame(list(sort_Pagerank.items()), columns=['Node', 'Pagerank'])
+#display(top5pagerank.head(10))
+print("Độ đo Pagerank")
+display(sort_Pagerank)
+print(sort_Pagerank)
+```
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089870789815312384/image.png?width=605&height=434">
+</p>
+-	Top 10 người có độ đo PageRank cao nhất
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089870610273939616/image.png">
+</p>
 
+-	<ins>Ý nghĩa</ins>: Độ đo PageRank càng cao thì họ càng được đăng nhiều hơn 1 lĩnh vực và có tương tác nhiều với những người được đăng trên những lĩnh vực phổ biến
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089870610529783848/image.png">
+</p>
 
+### 4. Clustering Coefficient
+```python
+clustering_coefficient =nx.clustering(G)
+sort_clustering_coefficient = dict(sorted(clustering_coefficient.items(), key=lambda kv:kv[1], reverse =True))
+#top5clustering = pd.DataFrame(list(sort_clustering_coefficient.items()), columns=['Node', 'Clustering coefficient'])
+#display(top5clustering.head(10))
+print("Độ đo Clustering")
+display(sort_clustering_coefficient)
+```
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089871233262288947/image.png?width=550&height=434">
+</p>
 
+-	Top 10 người có độ đo Clustering Coefficient cao nhất
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089871233782386748/image.png">
+</p>
+
+-	<ins>Ý nghĩa</ins>: Độ đo Clustering Coefficient càng cao thì họ chỉ được đăng trên chủ yếu 1 lĩnh vực chính
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089871234067595264/image.png">
+</p>
 
 
 

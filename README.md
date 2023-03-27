@@ -7,3 +7,8 @@
   <img src="https://cdn.discordapp.com/attachments/847349555703316512/1089857131383103608/image.png">
 </p>
 <!-- ![Screenshot](https://cdn.discordapp.com/attachments/847349555703316512/1089857131383103608/image.png){ style="display: block; margin: 0 auto" } -->
+## II.	Tiền xử lý dữ liệu
+- Import dữ liệu: Ở đây ta sử dụng cột “Name” là tên của người được đăng trên tạp chí và “Occupation” là thể loại ngành nghề/ lĩnh vực của tạp chí
+```php
+df = pd.read_csv('/content/timecovers2.csv', usecols = ["Name", "Occupation"])
+```

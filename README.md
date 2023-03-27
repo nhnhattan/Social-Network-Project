@@ -221,6 +221,53 @@ display(sort_clustering_coefficient)
   <img src="https://media.discordapp.net/attachments/847349555703316512/1089871234067595264/image.png">
 </p>
 
+## V. Thuật toán gom cụm
+### 1. Louvain
+```python
+#Louvain
+plt.figure(figsize=(17, 12), dpi=200) #Vẽ 1 nền trắng với độ phân giải là 200
+
+partition = community_louvain.best_partition(G) #Tính toán sự phân chia tốt nhất
+
+pos = nx.spring_layout(G)#Vẽ đồ thị
+cmap = cm.get_cmap('viridis', max(partition.values()) + 1) #Tô màu các node theo cộng đồng của nó
+nx.draw_networkx_nodes(G, pos, partition.keys(), node_size=150, cmap=cmap, node_color=list(partition.values()))
+nx.draw_networkx_edges(G, pos, alpha=0.5)
+nx.draw_networkx_labels(G, pos)
+plt.title("Louvain Community")
+
+values = list(partition.values())
+
+print("number of communities: ", len(np.unique(values)))
+
+for i in range(len(np.unique(values))):
+  print("nhom", i, "--------------------")
+  for name, k in partition.items():
+    if k == i:
+      print(name)
+  print("")
+  
+plt.show()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

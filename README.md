@@ -10,6 +10,6 @@
 ## II.	Tiền xử lý dữ liệu
 - Import dữ liệu: Ở đây ta sử dụng cột “Name” là tên của người được đăng trên tạp chí và “Occupation” là thể loại ngành nghề/ lĩnh vực của tạp chí
 
-`python
+```python
 df = pd.read_csv('/content/timecovers2.csv', usecols = ["Name", "Occupation"])
-`
+```

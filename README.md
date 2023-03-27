@@ -34,29 +34,8 @@ df.drop_duplicates() #loại bỏ các giá trị bị trùng lặp
 </p>
 <br />
 
-##III.	Chuyển đổi DataFrame thành đồ thị
-###1.	Import các thư viện cần thiết
-```python
-import pandas as pd
-import numpy as np
-import matplotlib
-import matplotlib.pyplot as plt
-import matplotlib.cm as cm
-import networkx as nx
-from networkx.algorithms import bipartite
-from networkx.algorithms import community
-import community.community_louvain as community_louvain
-from networkx import edge_betweenness_centrality
-from random import random
-#!pip install scikit-learn
-from scipy.spatial.distance import cdist
-import sklearn
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.cluster import KMeans
-```
-###2.	Đồ thị 2 phía
-•	![#f03c15]**Node**: Phía bên trái là “Occupation” – Lĩnh vực của tạp chí và bên phải là “Name” – Tên của người được đăng trên tạp chí đó
-•	**Edge**: Một cạnh tương ứng với khi một người được chọn để đăng tải trên lĩnh vực của tạp chí đó thì cạnh sẽ hình thành. 
+##III. Chuyển đổi DataFrame thành đồ thị
+
 
 
 

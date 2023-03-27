@@ -396,7 +396,45 @@ o	**<ins>Cụm 16<ins>**: Pauline Sabin, Vere Ponsonby Earl of Bessborough, Norm
 </p>
 
 ### 3. Girvan Newman
+```python
+#Givan newman
+comp = community.girvan_newman(G)
+node_groups = []
+for com in next(comp):
+  node_groups.append(list(com))
 
+a = np.array(node_groups, dtype=object)
+print(a)
+
+print("List 1")
+ng2 = pd.DataFrame(list(node_groups[0]), columns=['Node'])
+display(ng2)
+print("List 2")
+ng2 = pd.DataFrame(list(node_groups[1]), columns=['Node'])
+display(ng2)
+print("List 3")
+ng3 = pd.DataFrame(list(node_groups[2]), columns=['Node'])
+display(ng3)
+
+plt.figure(figsize=(20, 20))
+
+color_map = []#tô màu
+for node in G: #Từng node trong đồ thị G
+    if node in node_groups[0]: #Nếu thuộc node 0 thì tô màu xanh
+        color_map.append('blue')
+    elif node in node_groups[1]: 
+        color_map.append('green')
+    else:
+         color_map.append('red')
+
+nx.draw(G, node_color=color_map, with_labels=True)
+plt.title("Girvan newman")
+plt.show()
+```
+  *	**<ins>Gồm có 3 cụm, các thành viên của từng cụm:</ins>** </br>
+•	**<ins>Cụm 1</ins>**: 'Francisco Franco', 'William B. Bankhead', 'Emperor Henry Pu Yi', 'William Green', 'Eugene Talmadge', 'Joseph V. McKee', 'Anthony Grzebyk', 'William S. Knudsen', 'Samuel Insull', 'Italo Balbo', 'Robert F. Wagner', 'Harry Bridges', 'James Allred', 'Clyde L. Herring', 'Adolf Hitler', "John P. O'Brien", 'Norman H. Davis', 'Neville Chamberlain', 'Percy S. Straus', 'John Hay Whitney', 'Samuel Clay Williams', 'Hugh S. Johnson', 'Sir John Simon', 'Marriner S. Eccles', 'Harry L. Hopkins', 'Harry B Housser', 'Benjamin N. Cardozo', 'Rufus C. Dawes', 'Fiorello LaGuardia', 'Joseph Stalin', 'Alfred Landon', 'Mitchell Hepburn', 'Alben W. Barkley', 'Abby Rockefeller', 'Robert M. La Follette Jr', 'George Norris', 'Emilio Mola', 'Osman Ali Khan', 'J. Edgar Hoover', 'Gaston Doumergue', 'Gen. Douglas MacArthur', 'Frances Perkins', 'Pauline Sabin', 'Seton Porter', 'Joseph M. Reeves', 'Herbert Hoover', 'Edward J. Kelly', 'William R. Hearst', 'Eleanor Roosevelt', 'Wallis Warfield Simpson', 'Norman M. Thomas', 'Fulgencio Batista', 'Richard Leigh', 'Vere Ponsonby Earl of Bessborough', 'George Earle III', 'John L. Lewis', 'King George VI', 'Frank J. Hogan', 'Franklin D. Roosevelt', 'Yasuya Uchida', 'Henry T. Rainey', 'Joseph Goebbels', 'Joseph P. Kennedy Sr', 'Helen Reid', 'Joseph B. Poindexter', 'John Nance Garner', 'Howard H. Jones', 'Errett Lobban Cord', 'Rexford G. Tugwell', 'Alexei Stakhanov', 'George F. Warren', 'Huey P. Long', 'Harry F. Byrd', 'Joseph W. Byrns', 'Joseph Lyons', 'Jesse H. Jones', 'Henry P. Fletcher', 'Pat Harrison', 'James A. Macauley', 'Walter P. Chrysler', 'Harold L. Ickes', 'Klimentiy Voroshilov', 'J.P. Morgan', 'John Francis Neylan', 'Victor Hope Lord Linlithgow', 'Emperor Hirohito', 'Donald Richberg', 'William W. Atterbury', 'Robert McCormick', 'King George V', 'John T. Taylor', 'John Cowles', 'Manuel L. Quezon', 'Cordell Hull', 'Joseph C. Grew', 'Bruno Mussolini', 'William O. Douglas', 'Rufus D. Isaacs', 'Manuel Azana', 'King Farouk I', 'Charles P. Taft', 'Hugo L. Black', 'Hermann Goring', 'Wang Ching-wei', 'Daniel W. Hoan', 'Elmer Thomas', 'Louis D. Brandeis', 'Benito Mussolini', 'King Christian X', 'Herbert H. Lehman', 'Hirosi Saito', 'Ethel du Pont', 'Walter Lippman', 'William H. Woodin', 'Edward D. Duffield', 'Joseph M. Patterson', 'Edward F. McGrady', 'Koki Hirota', 'Prince Konoye', 'Carter Glass', 'Charles F. Kettering', 'Lazaro Cardenas', 'Colby M. Chester', 'Paul van Zeeland', 'Anthony Eden', 'Sara Delano Roosevelt', 'Stanley Baldwin', 'Henry L. Stevens Jr', 'Madame Chiang Kai-shek', 'Sadao Araki', 'Kurt von Schleicher', 'Leon Trotsky', 'James B. Conant', 'James Farley', 'Thomas E. Dewey', 'John D. M. Hamilton', 'Melvin A. Traylor', 'Henry Morgenthau Jr', 'William Phillips', 'Mitsumasa Yonai', 'John Buchan - 1st Baron Tweedsmuir', 'Martin W. Clement', 'Engelbert Dollfuss', 'Chiang Kai-shek', 'Joseph E. Davies', 'William E. Borah', 'Ferdinand Pecora', 'Queen Wilhelmina', 'Joseph T. Robinson', 'Pierre-Etienne Flandin', 'Edouard Daladier', 'Henry Ford', 'John J. Pelley', 'King Leopold III', 'Raymond Moley', 'Paul von Hindenburg', 'Juan Trippe', 'Vittorio Mussolini', 'George Peek', 'William G. McAdoo', 'Charles Curtis', 'Leon Blum', 'William L. Clayton', 'Walt Disney', 'Mohammad Reza Pahlavi', 'Maxime Weygand', 'Gerardo Machado', 'Sir Samuel Hoare', 'Vincent Astor', 'Charles E. Hughes', 'Robert Lee Doughton', 'Maxim Litvinov', 'Torkild Rieber', 'Emil Hurja', 'Henry A. Wallace'</br>
+•	**<ins>Cụm 2</ins>**: Jacob Ruppert, Bob Feller, Fred Perry, Donald Budge, Joe DiMaggio, Ellsworth Vines, Carl Hubbell, Gottfried von Cramm, Vernon Gomez, Helen Hull Jacobs, Cavalcade, Jack Crawford, Lou Gehrig, Dizzy Dean, Matt Winn, Lorne Chabot, Edward R. Bradley, Wallace Wade, Mickey Cochrane, Cavalcade, Joe DiMaggio, Mickey Cochrane, Fred Perry, Vernon Gomez, Donald Budge, Jack Crawford, Matt Winn</br>
+•	**<ins>Cụm 3</ins>**: Bobby Mauch, Jean Harlow, Billy Mauch, Leni Riefenstahl, Zeppo Marx, Paul Muni, Shirley Temple, Harpo Marx, Marie Dressler, Marlene Dietrich, Clark Gable, Chico Marx, Clyde Beatty, Groucho Marx, Alice in Wonderland, Cecil B. DeMille</br>
 
 
 

@@ -92,6 +92,7 @@ nx.draw_networkx(B, pos = nx.drawing.layout.bipartite_layout(B,Occupation),font_
   <img src="https://cdn.discordapp.com/attachments/847349555703316512/1089866895487926333/output.png">
 </p>
 -	Nhìn vào đồ thị, ta thấy rằng một lĩnh vực có thể có nhiều người được đăng khác nhau và một người có thể được đăng trên nhiều lĩnh vực khác nhau
+
 ### 3. Đồ thị 1 phía
 •	**Node**: Là tên của người được đăng trên tạp chí đó
 •	Edge: Hình thành khi 2 người được đăng trên cùng 1 lĩnh vực tạp chí, Ý nghĩa cho ta thấy sự cạnh tranh để giữ được vị trí của mình tại lĩnh vực đó 

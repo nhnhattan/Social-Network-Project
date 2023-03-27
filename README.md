@@ -94,15 +94,47 @@ nx.draw_networkx(B, pos = nx.drawing.layout.bipartite_layout(B,Occupation),font_
 -	Nhìn vào đồ thị, ta thấy rằng một lĩnh vực có thể có nhiều người được đăng khác nhau và một người có thể được đăng trên nhiều lĩnh vực khác nhau
 
 ### 3. Đồ thị 1 phía
-•	**Node**: Là tên của người được đăng trên tạp chí đó
-•	Edge: Hình thành khi 2 người được đăng trên cùng 1 lĩnh vực tạp chí, Ý nghĩa cho ta thấy sự cạnh tranh để giữ được vị trí của mình tại lĩnh vực đó </br>
+•	**Node**: Là tên của người được đăng trên tạp chí đó</br>
+•	**Edge**: Hình thành khi 2 người được đăng trên cùng 1 lĩnh vực tạp chí, Ý nghĩa cho ta thấy sự cạnh tranh để giữ được vị trí của mình tại lĩnh vực đó </br>
 <ins>Ví dụ</ins>: Như 2 người cùng được đăng trên 1 lĩnh vực là Politics & Gov thì họ sẽ được nối thành 1 cạnh
-Weight: Trọng số là số lĩnh vực trùng nhau mà 2 người cùng được đăng trên lĩnh vực đó 
+•	**Weight**: Trọng số là số lĩnh vực trùng nhau mà 2 người cùng được đăng trên lĩnh vực đó 
 
+```python
+G = bipartite.weighted_projected_graph(B, Name) #Trả về một phép chiếu có trọng số của B lên một trong các tập hợp node của nó.
 
+plt.figure(num=None, figsize=(17, 12), dpi=100, facecolor='w') #Tạo 1 hình trắng
 
+layout = nx.spring_layout(G)
 
+nx.draw_networkx_nodes( 
+    G,
+    layout,
+    nodelist = Name,
+    node_size =100,
+    node_color = 'blue'
+)
 
+nx.draw_networkx_edges(G, layout, edge_color="k", width=0.3) #Vẽ cạnh với màu là xám #cccccc
+node_labels = dict(zip(Name, Name)) #dict và zip để nối các node quen cùng 1 người với nhau
+nx.draw_networkx_labels(G, layout, labels=node_labels) 
+plt.axis('off') #Tắt trục, xóa trục x và y khỏi biểu đồ
+
+plt.title("Graph Team") #Tên đồ thị
+
+plt.show() #in đồ thị
+```
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089868094584922122/output.png?width=612&height=434">
+</p>
+
+- Xuất file csv
+```python
+labels = nx.get_edge_attributes(G, 'weight')
+df2 = pd.DataFrame(columns = ['source', 'target', 'weight'])
+for key, value in labels.items():
+    df2 = df2.append({'source':key[0], 'target':key[1], 'weight':value}, ignore_index=True)
+df2.to_csv (r'mydata4.csv', index = False, header=True)
+```
 
 
 

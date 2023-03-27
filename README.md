@@ -57,11 +57,40 @@ from sklearn.cluster import KMeans
 ```
 ### 2. Đồ thị 2 phía
 
-•	<font color="green"> Some green text </font>: Phía bên trái là “Occupation” – Lĩnh vực của tạp chí và bên phải là “Name” – Tên của người được đăng trên tạp chí đó
+•	**Node**: Phía bên trái là “Occupation” – Lĩnh vực của tạp chí và bên phải là “Name” – Tên của người được đăng trên tạp chí đó
 •	**Edge**: Một cạnh tương ứng với khi một người được chọn để đăng tải trên lĩnh vực của tạp chí đó thì cạnh sẽ hình thành. 
 
+```python
+print("Số thể loại tạp chí ngành nghề", Occupation.nunique())
+print("Số người được đăng ", Name.nunique())
+print("Số cạnh ", len(df))
+```
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089862405359665192/image.png">
+</p>
+- Có thể thấy ta có tất cả 17 ngành nghề và số lượng người mẫu được đăng tải trên tạp chí là 280. Cuối cùng là số cạnh được hình thành là 300.
+* **Đồ thị 2 phía**
 
+```python
+B = nx.Graph()
+Occupation = df['Occupation']
+Name = df['Name']
 
+for index, row in df.iterrows():
+    B.add_edge(row['Occupation'], row['Name'], weight=1)
+B.add_nodes_from(Name, bipartite = 0) #thêm nút source thuộc tập hợp 0
+B.add_nodes_from(Occupation, bipartite = 1) #thêm nút source thuộc tập hợp 1
+
+plt.figure(figsize=(12, 12)) #Tạo một hình trắng mới với size 20,20
+pos = nx.spring_layout(B) #Vẽ đồ thị
+#plt.subplots()là một hàm trả về một bộ giá trị chứa (các) đối tượng hình và trục
+#Vì vậy, khi sử dụng, fig, ax = plt.subplots()bạn giải nén bộ này vào các biến fig và ax.
+fig, ax = plt.subplots(1,1, figsize=(12,12), dpi = 200) #dpi là độ phân giải
+nx.draw_networkx(B, pos = nx.drawing.layout.bipartite_layout(B,Occupation),font_size=8,width=0.4) #draw_networkx(B: đồ thị, pos: khóa và vị trí)
+```
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089866728021950534/image.png?width=445&height=434">
+</p>
 
 
 

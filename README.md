@@ -287,49 +287,106 @@ o	**<ins>Cụm 16<ins>**: Pauline Sabin, Vere Ponsonby Earl of Bessborough, Norm
 ```
  
 <p align="center">
-  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089875389922410507/image.png">
 </p>
   
 ```diff
 + Cụm 2
 ```
   <p align="center">
-  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089876063011749958/image.png">
 </p>
   
 ```diff
 + Cụm 3
 ```
   <p align="center">
-  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089876204905050182/image.png">
 </p>
   
 ```diff
 + Cụm 4
 ```
   <p align="center">
-  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089876409310249050/image.png">
 </p>
   
 ```diff
 + Cụm 5
 ```
   <p align="center">
-  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089876589728256010/image.png">
 </p>
   
 ```diff
 + Cụm 6
 ```
   <p align="center">
-  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089876816623308920/image.png">
 </p>
   
 ```diff
 + Cụm 7
 ```
+  <p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+</p>
 
-
+  ```diff
++ Cụm 8
+```
+  <p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089876874580217886/image.png">
+</p>
+  ```diff
++ Cụm 7
+```
+  <p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+</p>
+  ```diff
++ Cụm 7
+```
+  <p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+</p>
+  ```diff
++ Cụm 7
+```
+  <p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+</p>
+  ```diff
++ Cụm 7
+```
+  <p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+</p>
+  ```diff
++ Cụm 7
+```
+  <p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+</p>
+  ```diff
++ Cụm 7
+```
+  <p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+</p>
+  ```diff
++ Cụm 7
+```
+  <p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+</p>
+  ```diff
++ Cụm 7
+```
+  <p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
+</p>
+  
 
 
 

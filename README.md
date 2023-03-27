@@ -1,0 +1,2 @@
+# MAGAZINE SOCIAL NETWORK PROJECT
+## I. Mô tả dữ liệu

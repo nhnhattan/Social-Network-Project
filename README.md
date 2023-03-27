@@ -57,7 +57,9 @@ from sklearn.cluster import KMeans
 ```
 ### 2. Đồ thị 2 phía
 
-•	$${\color{red}Node}$$: Phía bên trái là “Occupation” – Lĩnh vực của tạp chí và bên phải là “Name” – Tên của người được đăng trên tạp chí đó
+•	<span style="color:red">
+Text content
+</style>: Phía bên trái là “Occupation” – Lĩnh vực của tạp chí và bên phải là “Name” – Tên của người được đăng trên tạp chí đó
 •	**Edge**: Một cạnh tương ứng với khi một người được chọn để đăng tải trên lĩnh vực của tạp chí đó thì cạnh sẽ hình thành. 
 
 

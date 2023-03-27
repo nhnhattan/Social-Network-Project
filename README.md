@@ -89,7 +89,7 @@ fig, ax = plt.subplots(1,1, figsize=(12,12), dpi = 200) #dpi là độ phân gi�
 nx.draw_networkx(B, pos = nx.drawing.layout.bipartite_layout(B,Occupation),font_size=8,width=0.4) #draw_networkx(B: đồ thị, pos: khóa và vị trí)
 ```
 <p align="center">
-  <img src="https://media.discordapp.net/attachments/847349555703316512/1089866728021950534/image.png?width=445&height=434">
+  <img src="https://cdn.discordapp.com/attachments/847349555703316512/1089866895487926333/output.png">
 </p>
 
 

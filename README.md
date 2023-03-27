@@ -274,6 +274,14 @@ o	**<ins>Cụm 16<ins>**: Pauline Sabin, Vere Ponsonby Earl of Bessborough, Norm
   <img src="https://media.discordapp.net/attachments/847349555703316512/1089873517199233095/output.png?width=613&height=434">
 </p>
 
+* **Đặc trưng các cụm**:
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 
 
 

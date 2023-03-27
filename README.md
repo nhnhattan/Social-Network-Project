@@ -25,3 +25,7 @@ df.dropna() #loại bỏ các giá trị bị thiếu
 ```python
 df.drop_duplicates() #loại bỏ các giá trị bị trùng lặp
 ```
+-	Dữ liệu sau khi xử lý
+<p align="center">
+  <img src="[https://cdn.discordapp.com/attachments/847349555703316512/1089857131383103608/image.png](https://media.discordapp.net/attachments/847349555703316512/1089861357471547462/image.png)">
+</p>

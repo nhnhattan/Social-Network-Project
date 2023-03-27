@@ -140,11 +140,14 @@ display(sort_betweenness_centrality)
 ```
 - Độ đo Betweeness Centrality được xếp theo tên
 <p align="center">
-  <img src="https://media.discordapp.net/attachments/847349555703316512/1089868947064639499/image.png?width=624&height=434">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089869436363755591/image.png">
 </p>
 
-
-
+- Top 10 người có độ đo Betweeness Centrality cao nhất
+<p align="center">
+  <img src="https://media.discordapp.net/attachments/847349555703316512/1089869257258565722/image.png">
+</p>
+-	Ý nghĩa: Độ đo Betweeness Centrality càng cao thì họ sẽ được đăng trên nhiều lĩnh vực phổ biến với người khác nhất
 
 
 
